@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --color-orange: hsl(25, 97%, 53%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-grey: hsl(217, 12%, 63%);
+    --color-medium-grey: hsl(216, 12%, 54%);
+    --background-dark-blue-opacity-big:hsl(217, 37%, 14%);
+    --background-dark-blue: hsl(213, 19%, 18%);
+    --background-very-blue: hsl(216, 12%, 8%);
+}
+
+/*
+    font-family: "Overpass", sans-serif;
+*/
+
+.display-none {
+    display: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--background-very-blue);
+    color: var(--color-white);
+    font-family: "Overpass", sans-serif;
+    font-size: 1.2rem;
+}
+
+p {
+    color: var(--color-light-grey);
+}
+
+.container {
+    width: 32rem;
+    height: 32.3rem;
+
+    padding: 2.5rem;
+    border-radius: 2rem;
+    background: var(--background-dark-blue-opacity-big);
+}
+
+.container .img-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 1.9rem;
+
+    border-radius: 50%;
+    background: var(--background-dark-blue);
+}
+
+.info {
+    margin: 2rem 0;
+}
+
+.info h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.info p,
+.info-final p {
+    line-height: 2rem;
+}
+
+.avaliacoes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.avaliacoes span{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--background-dark-blue);
+    font-weight: 700;
+
+    padding: 2rem 2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.avaliacoes .active {
+    color: var(--color-white);
+    background: var(--color-light-grey);
+}
+
+.avaliacoes span:hover {
+    color: var(--color-white);
+    background: var(--color-orange);
+
+}
+
+button {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 2rem;
+    border: none;
+    padding: 1rem 0;
+
+    background-color: var(--color-orange);
+    color: var(--color-white);
+
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+button:hover {
+    color: var(--color-orange);
+    background: var(--color-white);
+}
+
+.container .tela-2 {
+    text-align: center;
+}
+
+.container .tela-2 .img-ilustracao img {
+    width: 12rem;
+}
+
+.resultado {
+    width: 150px;
+
+    margin: 2rem auto 3rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+
+    color: var(--color-orange);
+    background-color: var(--background-dark-blue);
+}
+
+.container .tela-2 .info-final h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
